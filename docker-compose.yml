@@ -1,0 +1,12 @@
+version: '3'
+services:
+  sample:
+    build: .
+    ports:
+      - "8080:8080"
+    image: "myapplication:alpine"
+    environment:
+      FLASK_ENV: development
+      FLASK_DEBUG: 1
+    volumes:
+      - .:/Users/suresh/mywork
